@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Cricket Live Score — Full-Stack App",
   "scripts": {
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && npm install --include=dev && npm run build",
     "start": "node server/index.js",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
-    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "install:all": "cd client && npm install && cd ../server && npm install",
     "postinstall": "cd server && npm install"
   },
   "engines": {
